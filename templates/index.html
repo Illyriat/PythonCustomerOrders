@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <h1>Shop Orders</h1>
+        {% for order in orders %}
+            <div>
+                <p>
+                    <b><a href="/orders/{{loop.index0}}">{{order.customer_name}}:</a></b>
+                </p>
+            </div>
+        {% endfor %}
+    </body>
+</html>

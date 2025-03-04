@@ -1,0 +1,57 @@
+/* General Page Styling */
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+/* Receipt Container */
+.receipt {
+    width: 320px;
+    background: white;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Receipt Heading */
+.receipt h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Horizontal Lines for Receipt Look */
+hr {
+    border: 1px dashed black;
+    margin: 10px 0;
+}
+
+/* Receipt Text */
+.receipt p {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Bold Labels */
+.receipt strong {
+    color: #333;
+}
+
+/* Footer Message */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+}

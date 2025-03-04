@@ -1,12 +1,23 @@
 <html>
     <head>
-        <title></title>
+        <title>Order {{ order.order_number }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='order.css') }}">
     </head>
 
-    <body>
-        <h1>Order: {{order.order_number}}</h1>
-            <div>
-                <p>{{order.customer_name}} {{ order.order_date }} {{ order.quantity }} {{order.description}} {{order.shipping_status}} {{order.delivered}}</p>
-            </div>
+    <body class="body">
+        <div class="receipt">
+            <h1>Shop Receipt</h1>
+            <hr>
+            <p><strong>Order Number:</strong> {{ order.order_number }}</p>
+            <p><strong>Customer Name:</strong> {{ order.customer_name }}</p>
+            <p><strong>Order Date:</strong> {{ order.order_date }}</p>
+            <p><strong>Quantity:</strong> {{ order.quantity }}</p>
+            <p><strong>Description:</strong> {{ order.description }}</p>
+            <p><strong>Shipping Status:</strong> {{ order.shipping_status }}</p>
+            <p><strong>Delivered:</strong> {{ order.delivered }}</p>
+            <p><strong>Charge: £</strong>{{ order.chargeAmount }}</p>
+            <hr>
+            <p class="footer">Thank you for shopping with us!</p>
+        </div>
     </body>
 </html>

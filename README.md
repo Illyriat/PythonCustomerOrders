@@ -15,3 +15,15 @@ A funtion app that shows he Orders of Customers in a Table for the user. Using J
 * Clone this repository.
 * Navigate into the repository folder via your Termainal or IDE Terminal.
 * Run ***python app.py***
+
+
+# UI
+
+Root page that is created
+
+![Main Page](./img/ShopOrders.JPG)
+
+
+When View is clicked, it opens the Order page for the Receipt details
+
+![Receipt Page](./img/Receipt.JPG)

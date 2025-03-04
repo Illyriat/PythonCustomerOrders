@@ -4,9 +4,9 @@
     </head>
 
     <body>
-        <h1>Customer Orders</h1>
+        <h1>Order: {{order.order_number}}</h1>
             <div>
-                <p>{{ order.order_date }} {{ order.quantity }} {{ order.order_number }}</p>
+                <p>{{order.customer_name}} {{ order.order_date }} {{ order.quantity }} {{order.description}} {{order.shipping_status}} {{order.delivered}}</p>
             </div>
     </body>
 </html>

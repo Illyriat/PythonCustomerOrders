@@ -1,11 +1,12 @@
-from flask import render_template
-from app import app
+from flask import Blueprint, render_template
 from models.order_list import orders
 
-@app.route("/")
-def index():
-    return render_template('index.html', title='Home', orders=orders)
+controller = Blueprint("controller", __name__)  # Create a Blueprint
 
-@app.route("/orders/<index>")
+@controller.route("/")
+def index():
+    return render_template("index.html", title="Home", orders=orders)
+
+@controller.route("/orders/<int:index>")
 def order(index):
-    return render_template("orders.html", title='Orders', order=orders[int(index)])
+    return render_template("orders.html", title="Orders", order=orders[index])

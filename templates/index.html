@@ -8,7 +8,7 @@
         {% for order in orders %}
             <div>
                 <p>
-                    <b><a href="/orders/{{loop.index0}}">{{order.customer_name}}:</a></b>
+                    <b><a href="/orders/{{loop.index0}}">{{order.order_number}}: {{order.customer_name}} {{order.order_date}}</a></b>
                 </p>
             </div>
         {% endfor %}
